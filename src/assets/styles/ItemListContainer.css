@@ -1,0 +1,16 @@
+.contenedorContador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 18px;
+  height: 18px;
+  background-color: rgb(175, 133, 84);
+  border-radius: 10px;
+  position: absolute;
+  top: 27px;
+  right: 15px;
+  font-size: 12px;
+  font-family: "roboto", sans-serif;
+  z-index: 0;
+}
