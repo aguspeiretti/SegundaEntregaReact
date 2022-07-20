@@ -1,8 +1,8 @@
 
 import './App.css'
-import CartWidget from './assets/components/CartWidget'
-import Menu from './assets/components/navBar'
-import ItemListContainer from './assets/components/ItemListContainer'
+import CartWidget from './components/CartWidget'
+import Menu from './components/navBar'
+import ItemListContainer from './components/ItemListContainer'
 
 
 
@@ -13,7 +13,8 @@ function App() {
     <div className="App">
 
        <Menu />
-       <CartWidget />
+       <CartWidget/>
+       <ItemListContainer />
        
 
 

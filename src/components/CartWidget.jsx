@@ -1,6 +1,6 @@
 import React from 'react'
-import "../styles/CartWidget.css"
-import "../styles/ItemListContainer.css"
+import "../components/CartWidget.css"
+import "../components/ItemListContainer.css"
 import ItemListContainer from './ItemListContainer'
 
 function CartWidget() {

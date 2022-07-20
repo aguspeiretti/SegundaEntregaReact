@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from  "../images/logo.png"
-import "../styles/navBar.css"
+import "../components/navBar.css"
 
 
 
