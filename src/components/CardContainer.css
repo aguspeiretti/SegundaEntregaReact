@@ -1,0 +1,9 @@
+.CardContainer {
+  width: 60%;
+  height: 80%;
+  background-color: rgba(121, 121, 121, 0.466);
+  position: absolute;
+  top: 100px;
+  right: 90px;
+  border-radius: 15px;
+}

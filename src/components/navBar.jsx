@@ -1,12 +1,14 @@
 import React from 'react'
 import logo from  "../images/logo.png"
 import "../components/navBar.css"
+import CartWidget from './CartWidget'
 
 
 
 
 
-function Menu() {
+
+function NavBar() {
 
     const mostrarMenu = () => {
         const menu = document.getElementById("menuUl");
@@ -14,21 +16,30 @@ function Menu() {
     }
 
   return (
-    <div className="menu">
+    <div className="NavBar">
+
         <div>
             <img className= "animate__animated animate__bounceInRight imagenLogo" src={logo} alt="logo" />
             
-            <div className='barra'></div>
+            <div className='barra'>
+
+            <button className='btnMenu' onClick={mostrarMenu}>Menu</button>
+
+               <CartWidget />
+               
+              
+
+            </div>
             
             <ul id='menuUl' >
-               <li>Home</li>
-               <li className='uno'>Nosotros</li>
-               <li className='dos'>Colegios</li>
-               <li className='tres'>Empresas</li>
-               <li className='cuatro'>Jardines</li>
+               <li><a href="#">Home</a></li>
+               <li className='uno'><a href="#">Nosotros</a></li>
+               <li className='dos'><a href="#">Colegios</a></li>
+               <li className='tres'><a href="#">Empresas</a></li>
+               <li className='cuatro'><a href="#">Jardines</a></li>
               </ul>
         </div>
-        <button className='btnMenu' onClick={mostrarMenu}>Menu</button>
+        
            
         
     
@@ -36,4 +47,4 @@ function Menu() {
   )
 }
 
-export default Menu
+export default NavBar

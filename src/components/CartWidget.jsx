@@ -1,7 +1,7 @@
 import React from 'react'
 import "../components/CartWidget.css"
-import "../components/ItemListContainer.css"
-import ItemListContainer from './ItemListContainer'
+
+
 
 function CartWidget() {
 
@@ -9,8 +9,9 @@ function CartWidget() {
     <>
 
     <button className='iconoCarritoContenedor'><i class="fa-solid fa-cart-shopping iconoCarrito"></i></button>
+    <div className='prueba'>
 
-    <ItemListContainer/>
+    </div>
 
     </>
   )

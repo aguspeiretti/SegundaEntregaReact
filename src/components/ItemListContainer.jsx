@@ -10,7 +10,10 @@ function ItemListContainer({greeting}){
             {greeting}0
         </div>
 
-        <ItemCount />
+        
+
+       
+
 
         </>
     )
