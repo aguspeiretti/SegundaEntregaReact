@@ -6,4 +6,5 @@
   top: 100px;
   right: 90px;
   border-radius: 15px;
+  display: flex;
 }

@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 
 
-function ItemCount({ titulo, stock, inicial }) {
+function ItemCount({ titulo, stock, inicial,img,id }) {
 
     const [count, setCount] = useState(inicial)
 
@@ -22,13 +22,14 @@ function ItemCount({ titulo, stock, inicial }) {
         if (count === 0){
             alert(`debes agregar un producto al carrito`)
         }else{
-            alert(`Agregaste ${count} productos al carrito`)
+            alert(`Agregaste ${count} unidad del producto ${id} al carrito`)
         }
     }
 
   return (
     <div className='card'>
         <h3>{titulo}</h3>
+        <img src="" alt="imagen" />
         <div className="contador">
             <button disabled={count === 0 } onClick={handleClickMenos} className='aumentar'>-</button>
             {count}

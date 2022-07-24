@@ -13,6 +13,8 @@ const CardContainerPrendas1 = ({elementos}) => {
             titulo={elemento.titulo}
             stock={elemento.stock}
             inicial={elemento.inicial}
+            img={elemento.img}
+            id = {elemento.id}
             />
         )
         }

@@ -13,55 +13,65 @@ useEffect(() => {
         id: 1,
         titulo: 'Producto 1',
         stock: 10,
-        inicial: 1
+        inicial: 1,
+        img: ''
       },
       {
         id: 2,
         titulo: 'Producto 2',
         stock: 10,
-        inicial: 1
+        inicial: 1,
+        img: ''
       },
       {
         id: 3,
         titulo: 'Producto 3',
         stock: 10,
-        inicial: 1
+        inicial: 1,
+        img: ''
       },
-      {
-        id: 3,
-        titulo: 'Producto 3',
-        stock: 10,
-        inicial: 1
-      },
-      {
-        id: 3,
-        titulo: 'Producto 3',
-        stock: 10,
-        inicial: 1
-      },
+  
       {
         id: 4,
         titulo: 'Producto 4',
         stock: 10,
-        inicial: 1
+        inicial: 1,
+        img: ''
       },
       {
-        id:5,
+        id: 5,
         titulo: 'Producto 5',
         stock: 10,
-        inicial: 1
+        inicial: 1,
+        img: ''
       },
       {
-        id: 6,
+        id:6,
         titulo: 'Producto 6',
         stock: 10,
-        inicial: 1
+        inicial: 1,
+        img: ''
       },
       {
         id: 7,
         titulo: 'Producto 7',
         stock: 10,
-        inicial: 1
+        inicial: 1,
+        img: ''
+      },
+      {
+        id: 8,
+        titulo: 'Producto 8',
+        stock: 10,
+        inicial: 1,
+        img: ''
+      },
+      {
+        id: 9,
+        titulo: 'Producto 9',
+        stock: 10,
+        inicial: 1,
+        img: ''
       }
 
     ])
