@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 
 
-function ItemCount({titulo , stock , inicial }) {
+function ItemCount({ titulo, stock, inicial }) {
 
     const [count, setCount] = useState(inicial)
 

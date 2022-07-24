@@ -9,10 +9,7 @@ function CartWidget() {
     <>
 
     <button className='iconoCarritoContenedor'><i class="fa-solid fa-cart-shopping iconoCarrito"></i></button>
-    <div className='prueba'>
-
-    </div>
-
+    
     </>
   )
 }
