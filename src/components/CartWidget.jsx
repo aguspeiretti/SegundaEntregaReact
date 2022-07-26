@@ -1,5 +1,5 @@
 import React from 'react'
-import "../components/CartWidget.css"
+import "./CartWidget.css"
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../components/CardContainerPrendas1.css"
+import "./CardContainerPrendas1.css"
 import ItemCount from './ItemCount'
 
 const CardContainerPrendas1 = ({elementos}) => {
