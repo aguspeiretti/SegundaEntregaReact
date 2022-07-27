@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from  "../images/logo.png"
-import "../components/navBar.css"
+import "./navBar.css"
 import CartWidget from './CartWidget'
 
 

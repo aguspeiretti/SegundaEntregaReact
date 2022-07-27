@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
-import "../components/CardContainer.css"
+import "./CardContainer.css"
 import CardContainerPrendas1 from './CardContainerPrendas1'
 import productos from  "../productos.json"
 

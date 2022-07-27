@@ -1,5 +1,5 @@
 import React from 'react'
-import "../components/ItemCount.css"
+import "./ItemCount.css"
 import { useState } from 'react'
 
 
