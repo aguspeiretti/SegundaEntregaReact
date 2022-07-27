@@ -8,7 +8,7 @@ function CartWidget() {
   return (
     <>
 
-    <button className='iconoCarritoContenedor'><i class="fa-solid fa-cart-shopping iconoCarrito"></i></button>
+    <button className='iconoCarritoContenedor'><i className="fa-solid fa-cart-shopping iconoCarrito"></i></button>
     
     </>
   )

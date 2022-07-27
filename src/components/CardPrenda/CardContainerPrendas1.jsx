@@ -1,6 +1,6 @@
 import React from 'react'
-import ".CardContainerPrendas1.css"
-import ItemCount from './ItemCount'
+import "./CardContainerPrendas1.css"
+import ItemCount from '../ItemCount/ItemCount'
 
 const CardContainerPrendas1 = ({elementos}) => {
 
@@ -10,13 +10,17 @@ const CardContainerPrendas1 = ({elementos}) => {
         {
             elementos.map((elemento) => 
             <ItemCount
+            key={elemento.id}
             titulo={elemento.titulo}
             stock={elemento.stock}
             inicial={elemento.inicial}
             img={elemento.img}
-            id = {elemento.id}
+            
+            
             />
+            
         )
+        
         }
     </div>
 

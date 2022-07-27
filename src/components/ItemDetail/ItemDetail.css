@@ -1,0 +1,23 @@
+.contenedor {
+  width: 300px;
+  height: 400px;
+  background-color: rgba(201, 201, 201, 0.459);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: "roboto", sans-serif;
+}
+
+img {
+  width: 200px;
+}
+
+p {
+  margin-top: 10px;
+}
+.precio {
+  margin-left: 70px;
+}
