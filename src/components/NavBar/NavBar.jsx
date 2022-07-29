@@ -25,7 +25,7 @@ function NavBar() {
 
             <button className='btnMenu' onClick={mostrarMenu}>Menu</button>
 
-               <CardtWidget />
+              <CartWidget />
                
               
 
