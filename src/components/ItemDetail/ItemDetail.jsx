@@ -1,23 +1,26 @@
 import React from 'react'
+import ItemCount from '../ItemCount/ItemCount'
 import "./ItemDetail.css"
+import Item from '../item/Item'
 
-const ItemDetail = ({items}) => {
-  console.log(items)
 
-  return (
+const ItemDetail = ({producto}) => {
+  
+ console.log(producto)
+
+  return (   
         
     <div className='contenedor'>
+      
+    {
+        producto.map((producto)=>{
+          return(
+            <Item key={producto.id}  producto={producto} />
+          )
+        })
+    }
      
-      {
-        items.map((item) =>
-          <div key={item.id}>
-            <img src={item.img} alt={item.titulo} />
-            <p>{item.descripcion}</p>
-            <p className='precio'>{item.precio}</p>
-            
-          </div>
-        )
-      }
+
     </div>
   )
 }

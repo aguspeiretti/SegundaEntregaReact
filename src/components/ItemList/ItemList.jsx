@@ -5,20 +5,24 @@ import "./ItemList.css"
 
 const ItemList = ({productos}) => {
     
-   
+   console.log(productos)
+
   return (
-  <div className='ItemList'>
+    <div className='contenedorItemList'>
+<div className='ItemList'>
     
     {
         productos.map((producto)=>{
             return(
-               <Item producto={producto} /> 
+               <Item key={producto.id}  producto={producto} /> 
             )
             
         })
     }
 
   </div>
+    </div>
+  
           
 
   )

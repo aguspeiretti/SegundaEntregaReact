@@ -2,7 +2,8 @@ import React from 'react'
 import logo from '../../images/logo.png'
 import "./navBar.css"
 import CartWidget from '../CartWidget/CartWidget'
-
+import { Link } from "react-router-dom"
+ 
 
 
 
@@ -19,25 +20,25 @@ function NavBar() {
     <div className="NavBar">
 
         <div>
-            <img className= "animate__animated animate__bounceInRight imagenLogo" src={logo} alt="logo" />
+            
             
             <div className='barra'>
 
-            <button className='btnMenu' onClick={mostrarMenu}>Menu</button>
+            <img className= "animate__animated animate__bounceInRight imagenLogo" src={logo} alt="logo" />
+
+            <ul id='menuUl' >
+               <li><Link className='link' to="/">Home</Link></li>
+               
+               <li className='dos'><Link className='link' to="/category/Colegios">Colegios</Link></li>
+               <li className='tres'><Link className='link' to="/category/Empresas">Empresas</Link></li>
+              
+              </ul>
 
               <CartWidget />
-               
-              
 
             </div>
             
-            <ul id='menuUl' >
-               <li><a href="#">Home</a></li>
-               <li className='uno'><a href="#">Nosotros</a></li>
-               <li className='dos'><a href="#">Colegios</a></li>
-               <li className='tres'><a href="#">Empresas</a></li>
-               <li className='cuatro'><a href="#">Jardines</a></li>
-              </ul>
+          
         </div>
         
            

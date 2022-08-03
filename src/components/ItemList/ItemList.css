@@ -1,3 +1,19 @@
 .ItemList {
+  width: 80vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  row-gap: 20px;
+  column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorItemList {
+  width: 90vw;
+  height: 80vh;
+  margin-top: 90px;
+  background-color: rgba(190, 190, 190, 0.541);
+  border-radius: 15px;
   display: flex;
+  justify-content: center;
 }

@@ -1,89 +1,35 @@
 .barra {
   width: 100%;
-  height: 50px;
-  background-color: black;
+  height: 60px;
+  background-color: rgb(0, 0, 0);
   position: absolute;
   top: 0;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 34%,
-    rgba(0, 0, 0, 1) 75%,
-    rgba(0, 0, 0, 1) 97%,
-    rgba(0, 0, 0, 1) 97%
-  );
+  display: flex;
+  align-items: center;
 }
 .imagenLogo {
-  width: 600px;
-  margin-left: -15%;
+  width: 50px;
+  margin-left: 1%;
   --animate-duration: 1s;
-  margin-top: 30px;
+
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 #menuUl {
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  top: -600px;
-  left: 160px;
-  width: 400px;
-  height: 600px;
-  font-size: 30px;
-  font-family: "roboto", sans-serif;
-  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  transform: rotate(-90deg);
-  padding-left: 20px;
+  margin-left: 5%;
+}
 
-  transition: 1s;
-}
-#menuUl.mostrar {
-  top: 30px;
-  transform: rotate(0deg);
-}
 #menuUl li {
+  list-style: none;
+  margin-left: 5%;
   color: white;
   text-shadow: 0 0 0.7em rgb(0, 0, 0), 0 0 0.7em rgb(0, 0, 0),
     0 0 0.7em rgb(0, 0, 0);
+  color: aliceblue;
 }
-#menuUl li a {
+.link {
   text-decoration: none;
-  color: white;
-  text-shadow: 0 0 0.7em rgb(0, 0, 0), 0 0 0.7em rgb(0, 0, 0),
-    0 0 0.7em rgb(0, 0, 0);
-}
-#menuUl li a:hover {
-  text-shadow: 0 0 0.7em rgb(206, 77, 17), 0 0 0.7em rgb(236, 142, 0),
-    0 0 0.7em rgb(226, 89, 9);
-}
-
-.uno {
-  padding-left: 170px;
-}
-.dos {
-  padding-left: 210px;
-}
-.tres {
-  padding-left: 195px;
-}
-.cuatro {
-  padding-left: 50px;
-}
-.btnMenu {
-  background-color: transparent;
-  border: none;
-  width: 60px;
-  height: 40px;
-  position: absolute;
-  top: 0px;
-  right: 80px;
-  font-size: 20px;
-  font-family: "roboto", sans-serif;
-  color: #fff;
-}
-
-.btnMenu:hover {
-  color: rgb(216, 153, 72);
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
 }

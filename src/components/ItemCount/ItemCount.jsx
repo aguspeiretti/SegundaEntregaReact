@@ -1,10 +1,11 @@
 import React from 'react'
 import "./ItemCount.css"
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
-function ItemCount({ titulo, stock, inicial,img,id }) {
+function ItemCount({ titulo, stock, inicial,img,id ,idProducto}) {
 
     const [count, setCount] = useState(inicial)
 
@@ -29,7 +30,7 @@ function ItemCount({ titulo, stock, inicial,img,id }) {
   return (
     <div className='card'>
         <h3>{titulo}</h3>
-        <img src="" alt="imagen" />
+        <Link to={`/item/${idProducto}`}><img className='imagenCard' src={img} alt="imagen" /></Link>
         <div className="contador">
             <button disabled={count === 0 } onClick={handleClickMenos} className='aumentar'>-</button>
             {count}

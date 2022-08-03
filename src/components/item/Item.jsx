@@ -1,13 +1,22 @@
 import React from 'react'
-import "./Item.css"
+import ItemCount from "../ItemCount/ItemCount"
+
 const Item = ({producto}) => {
 
+  
+ 
     
   return (
 
     <div className='card'>
-        <h3>{producto.titulo}</h3>
-        <p>{producto.stock}</p>
+        <ItemCount 
+        inicial={producto.inicial } 
+        stock={producto.stock}
+        id={producto.id}
+        titulo={producto.titulo}
+        img={producto.img}
+        idProducto={producto.idProducto}
+        />
     </div>
 
   )
