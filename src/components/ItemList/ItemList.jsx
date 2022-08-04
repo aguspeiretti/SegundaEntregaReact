@@ -14,7 +14,15 @@ const ItemList = ({productos}) => {
     {
         productos.map((producto)=>{
             return(
-               <Item key={producto.id}  producto={producto} /> 
+               <Item
+               key={producto.id}
+               inicial={producto.inicial } 
+            stock={producto.stock}
+            id={producto.id}
+            titulo={producto.titulo}
+            img={producto.img}
+            idProducto={producto.idProducto} 
+                /> 
             )
             
         })
