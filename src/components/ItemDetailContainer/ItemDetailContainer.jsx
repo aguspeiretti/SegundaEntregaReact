@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
     setItems(resultado)
 
     
-
+      
     
   })
     
@@ -40,7 +40,7 @@ const ItemDetailContainer = () => {
 
 return (
   <div className='idc'>
-  <ItemDetail producto={items} />
+  <ItemDetail  producto={items}  />
   </div>
 
   

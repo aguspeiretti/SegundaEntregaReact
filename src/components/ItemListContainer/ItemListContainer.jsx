@@ -3,6 +3,7 @@ import "./ItemListContainer.css"
 import productos from "../../productos.json"
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
+import ItemCount from '../ItemCount/ItemCount'
 
 
 function ItemListContainer(){
@@ -39,6 +40,7 @@ function ItemListContainer(){
     return(
         <div className='ItemListContainer'>
                 <ItemList productos={items}/>
+                
         </div>
             
        

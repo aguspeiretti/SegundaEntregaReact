@@ -1,31 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import "./ItemDetail.css"
-import Item from '../item/Item'
+import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
+
 
 
 const ItemDetail = ({producto}) => {
-  
- console.log(producto)
+
+  console.log
+ 
+  const cartContext = useContext(CartContext)
+  const {cart ,addToCart} = cartContext
+
+  const onAdd = (cantidad) =>{
+    addToCart(producto[0] ,cantidad)
+  }
 
   return (   
         
     <div className='contenedor'>
       
-    {
-        producto.map((producto)=>{
+       {
+        producto.map((prod , i )=>{
           return(
-            <Item 
-            inicial={producto.inicial } 
-            stock={producto.stock}
-            id={producto.id}
-            titulo={producto.titulo}
-            img={producto.img}
-            idProducto={producto.idProducto}            
-            />
-          )
+            <div key={i} className='card'>
+              <h3>{prod.titulo}</h3>
+              <Link to={`/item/${prod.idProducto}`}><img className='imagenCard' src={prod.img} alt="imagen" /></Link>
+              
+              <ItemCount  inicial={prod.inicial} stock={prod.stock} onAdd={onAdd} />
+
+             </div>
+            )
         })
-    }
+      }
      
 
     </div>

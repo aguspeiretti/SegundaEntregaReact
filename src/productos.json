@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Empresa 1",
       "stock": 10,
       "inicial": 1,
@@ -10,7 +10,7 @@
       
     },
     {
-        "id": 2,
+        "id": "2",
         "titulo": "empresa 2 ",
         "stock": 10,
         "inicial": 1,
@@ -19,7 +19,7 @@
         "idProducto": "11"
       },
       {
-        "id": 3,
+        "id": "3",
         "titulo": "Empresa 3",
         "stock": 10,
         "inicial": 1,
@@ -30,7 +30,7 @@
       },
 
       {
-        "id": 4,
+        "id": "4",
         "titulo": "Empresa 4",
         "stock": 10,
         "inicial": 1,
@@ -41,7 +41,7 @@
 
       },
       {
-        "id": 5,
+        "id": "5",
         "titulo": "Remera1",
         "stock": 10,
         "inicial": 1,
@@ -51,7 +51,7 @@
 
       },
       {
-        "id": 6,
+        "id": "6",
         "titulo": "Producto 6",
         "stock": 10,
         "inicial": 1,
@@ -61,7 +61,7 @@
 
       },
       {
-        "id": 7,
+        "id": "7",
         "titulo": "Producto 7",
         "stock": 10,
         "inicial": 1,
@@ -72,7 +72,7 @@
 
       },
       {
-        "id": 8,
+        "id": "8",
         "titulo": "Producto 8",
         "stock": 10,
         "inicial": 1,
