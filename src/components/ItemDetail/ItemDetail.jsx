@@ -13,9 +13,11 @@ const ItemDetail = ({producto}) => {
  
   const cartContext = useContext(CartContext)
   const {cart ,addToCart} = cartContext
+  const [goToCart , setGoToCart] = useState(false)
 
   const onAdd = (cantidad) =>{
     addToCart(producto[0] ,cantidad)
+    setGoToCart(true)
   }
 
   return (   
@@ -29,7 +31,11 @@ const ItemDetail = ({producto}) => {
               <h3>{prod.titulo}</h3>
               <Link to={`/item/${prod.idProducto}`}><img className='imagenCard' src={prod.img} alt="imagen" /></Link>
               
-              <ItemCount  inicial={prod.inicial} stock={prod.stock} onAdd={onAdd} />
+              {
+                goToCart
+                ?<Link to={"/cart"}>Terminar compra</Link>
+                :<ItemCount  inicial={prod.inicial} stock={prod.stock} onAdd={onAdd} />
+              }
 
              </div>
             )
