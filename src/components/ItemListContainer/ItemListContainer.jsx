@@ -6,10 +6,12 @@ import { useParams } from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount'
 
 
+
 function ItemListContainer(){
 
     const [items ,setItems] = useState([])
     const { idCategoria }= useParams()
+   
 
     useEffect(()=>{
         
@@ -39,6 +41,8 @@ function ItemListContainer(){
 
     return(
         <div className='ItemListContainer'>
+
+            
                 <ItemList productos={items}/>
                 
         </div>

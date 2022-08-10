@@ -31,21 +31,19 @@ const CartProvider = ({children})=>{
     
   }
 
-  const deleteCartById = (id) =>{
-    let index = newCart.findIndex(el=>el.id === id)
-
-    const newCart = [...cart]
-      newCart.splice(index, 1 )
-      setCart(...newCart)
-  }
+  
+  const deleteCartById = (id)=>{  
+    let newCart = cart.filter(el => el.id !== id)
+    setCart([...newCart])
+}
 
   const deleteCart = () =>{
     setCart([])
   }
   console.log(cart)
-
+  console.log(CartContext)
   return(
-    <CartContext.Provider value={{ cart, setCart , addToCart}}>
+    <CartContext.Provider value={{ cart, setCart , addToCart ,deleteCart, deleteCartById}}>
 
 
       {children}

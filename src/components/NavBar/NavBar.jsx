@@ -3,6 +3,7 @@ import logo from '../../images/logo.png'
 import "./navBar.css"
 import CartWidget from '../CartWidget/CartWidget'
 import { Link } from "react-router-dom"
+import Carrito from '../carrito/Carrito'
  
 
 
@@ -11,9 +12,11 @@ import { Link } from "react-router-dom"
 
 function NavBar() {
 
-    const mostrarMenu = () => {
-        const menu = document.getElementById("menuUl");
-        menu.classList.toggle("mostrar");
+
+  const [showCart, setShowCart] = React.useState(false)
+
+    const mostrarCart= () => {
+        setShowCart( !showCart )
     }
 
   return (
@@ -34,11 +37,19 @@ function NavBar() {
               
               </ul>
 
-              <CartWidget />
+              
+             
 
             </div>
             
-          
+            {
+                showCart ? <Carrito /> : null
+            }
+           
+            <div onClick={mostrarCart} className='pop'>
+            <CartWidget />
+            </div>
+           
         </div>
         
            

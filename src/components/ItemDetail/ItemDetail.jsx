@@ -9,12 +9,12 @@ import { CartContext } from '../../context/CartContext'
 
 const ItemDetail = ({producto}) => {
 
-  console.log
+  
  
   const cartContext = useContext(CartContext)
   const {cart ,addToCart} = cartContext
   const [goToCart , setGoToCart] = useState(false)
-
+  console.log(cartContext)
   const onAdd = (cantidad) =>{
     addToCart(producto[0] ,cantidad)
     setGoToCart(true)
