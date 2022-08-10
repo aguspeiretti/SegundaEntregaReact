@@ -12,12 +12,16 @@ const ItemDetail = ({producto}) => {
   
  
   const cartContext = useContext(CartContext)
-  const {cart ,addToCart} = cartContext
+  const {cart ,addToCart ,mostrarCart ,showCart} = cartContext
   const [goToCart , setGoToCart] = useState(false)
-  console.log(cartContext)
+  
+  const mostrarCarrito = () =>{
+    mostrarCart()}
+ 
   const onAdd = (cantidad) =>{
     addToCart(producto[0] ,cantidad)
     setGoToCart(true)
+    mostrarCarrito()
   }
 
   return (   

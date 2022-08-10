@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./ItemCount.css"
 import { useState } from 'react'
+import { CartContext } from '../../context/CartContext'
+
+
 
 function ItemCount( {stock, inicial ,onAdd }) {
 
+  const cartContext = useContext(CartContext)
+  const {mostrarCart ,showCart } = cartContext
+  
+  const mostrarCarrito = () =>{
+    mostrarCart()}
 
   const [count, setCount] = useState(inicial)
    

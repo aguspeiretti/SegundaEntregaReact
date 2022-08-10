@@ -4,7 +4,8 @@ import "./navBar.css"
 import CartWidget from '../CartWidget/CartWidget'
 import { Link } from "react-router-dom"
 import Carrito from '../carrito/Carrito'
- 
+import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext' 
 
 
 
@@ -12,12 +13,15 @@ import Carrito from '../carrito/Carrito'
 
 function NavBar() {
 
+  const cartContext = useContext(CartContext)
+  const {mostrarCart ,showCart } = cartContext
 
-  const [showCart, setShowCart] = React.useState(false)
+  const mostrarCarrito = () =>{
+    mostrarCart()}
 
-    const mostrarCart= () => {
-        setShowCart( !showCart )
-    }
+   
+
+
 
   return (
     <div className="NavBar">
@@ -46,7 +50,7 @@ function NavBar() {
                 showCart ? <Carrito /> : null
             }
            
-            <div onClick={mostrarCart} className='pop'>
+            <div onClick={mostrarCarrito}  className='pop'>
             <CartWidget />
             </div>
            

@@ -40,10 +40,18 @@ const CartProvider = ({children})=>{
   const deleteCart = () =>{
     setCart([])
   }
+
+  const [showCart, setShowCart] = useState(false)
+
+    const mostrarCart= () => {
+        setShowCart( !showCart )
+    }
+
+
   console.log(cart)
   console.log(CartContext)
   return(
-    <CartContext.Provider value={{ cart, setCart , addToCart ,deleteCart, deleteCartById}}>
+    <CartContext.Provider value={{showCart, cart, setCart , addToCart ,deleteCart, deleteCartById, mostrarCart }}>
 
 
       {children}
