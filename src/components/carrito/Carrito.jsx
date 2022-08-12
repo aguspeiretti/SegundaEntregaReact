@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
+import Loader from '../loader/Loader'
 import "./carrito.css"
 
 const Carrito = () => {
@@ -24,7 +25,6 @@ const Carrito = () => {
                </div>
                <div className='prendasCarrito'>
                    <h4>Tus prendas</h4>
-                   
                </div>
                <div>
                  
@@ -62,6 +62,7 @@ const Carrito = () => {
    
    
            </div>
+          
        </div>
    
      )

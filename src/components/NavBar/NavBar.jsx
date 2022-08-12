@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 import Carrito from '../carrito/Carrito'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext' 
+import Loader from '../loader/Loader'
 
 
 
@@ -35,7 +36,6 @@ function NavBar() {
 
             <ul id='menuUl' >
                <li><Link className='link' to="/">Home</Link></li>
-               
                <li className='dos'><Link className='link' to="/category/Colegios">Colegios</Link></li>
                <li className='tres'><Link className='link' to="/category/Empresas">Empresas</Link></li>
               

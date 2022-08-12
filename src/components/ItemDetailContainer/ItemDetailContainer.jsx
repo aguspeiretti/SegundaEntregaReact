@@ -3,40 +3,64 @@ import ItemDetail from '../ItemDetail/ItemDetail'
 import productos from '../../productos.json'
 import ".//ItemDetailContainer.css"
 import { useParams } from 'react-router-dom'
+import {collection, getDocs , getFirestore } from "firebase/firestore"
+import Loader from '../loader/Loader'
 
 const ItemDetailContainer = () => {
 
   const [items, setItems] = useState([])
   const { idProducto } = useParams()
+  const [loading, setLoading] = useState(false)
 
  
-  useEffect(() => {
+  useEffect(() =>{
+     
+    setLoading(true)
 
-  const PromesaProducto = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      
-      if(idProducto){
-        resolve(productos.filter(producto=>producto.idProducto === idProducto))
+    const db = getFirestore()
+    
+    const refcollectionProductos = collection(db , "productos" ) //referencia al documento
+    
+    getDocs(refcollectionProductos).then((res) => {
+    
+    let limpios = res.docs
+    
+    limpios = limpios.map((producto)=>{
+        
+    return ({id: producto.id, ...producto.data() })
+       
+    })
+    
+    let completos = limpios.filter((producto)=>{
+        return producto})
+        
+
+    limpios = limpios.filter((producto)=>{
+        return producto.idProducto === idProducto
+    } )
+
+    
+    if (idProducto){
+        setItems(limpios)
+        setLoading(false)
+
+    }else{
+        setItems(completos)
+        setLoading(false)
+        
     }
-    else{
-        resolve(productos)
-    }
-  
-      
-    }, 2000);
-  })
-   
-  PromesaProducto.then((resultado) => {
-    setItems(resultado)
-
     
-      
     
-  })
+    })
     
-}, [idProducto])
 
 
+},[idProducto])
+
+if(loading){
+    return <Loader />
+}
+else{
 
 return (
   <div className='idc'>
@@ -47,6 +71,6 @@ return (
 
 )
 }
-
+}
 export default ItemDetailContainer
 
