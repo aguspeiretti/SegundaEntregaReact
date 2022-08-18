@@ -6,6 +6,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CartProvider from './context/CartContext.jsx';
 import Loader from './components/loader/Loader';
+import Checkout from './components/checkout/Checkout';
 
 
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/category/:idCategoria' element={<ItemListContainer />} />
             <Route path='/item/:idProducto' element={<ItemDetailContainer />} />
+            <Route path='/Checkout' element={<Checkout/>} />
             <Route path='*' element={<p>404</p>} />    
           </Routes>      
         </BrowserRouter>
